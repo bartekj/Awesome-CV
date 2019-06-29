@@ -515,6 +515,13 @@
           \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
           \href{https://www.reddit.com/user/\@reddit}{\faReddit\acvHeaderIconSep\@reddit}%
         }%
+      \ifthenelse{\isundefined{\@keybase}}%
+        {}%
+        {%
+          \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
+          \href{https://keybase.io/\@keybase}{\faKeybase\acvHeaderIconSep\@keybase}%
+        }%
+
       \ifthenelse{\isundefined{\@xing}}%
         {}%
         {%
